@@ -1,5 +1,5 @@
 {
-  "name": "@thr/favicon-loader",
+  "name": "@th.r/favicon-loader",
   "version": "1.0.0",
   "description": "loading and downloading best favicon of a Website",
   "main": "index.js",
