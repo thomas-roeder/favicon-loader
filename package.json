@@ -1,5 +1,5 @@
 {
-  "name": "favicon-loader",
+  "name": "@thr/favicon-loader",
   "version": "1.0.0",
   "description": "loading and downloading best favicon of a Website",
   "main": "index.js",
@@ -25,5 +25,6 @@
     "follow-redirects": "^1.7.0",
     "image-size": "^0.7.4",
     "page-icon": "^0.3.0"
-  }
+  },
+  "devDependencies": {}
 }
