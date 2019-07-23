@@ -1,0 +1,29 @@
+{
+  "name": "favicon-loader",
+  "version": "1.0.0",
+  "description": "loading and downloading best favicon of a Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-roeder/favicon-loader.git"
+  },
+  "keywords": [
+    "favicon",
+    "icon"
+  ],
+  "author": "THR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomas-roeder/favicon-loader/issues"
+  },
+  "homepage": "https://github.com/thomas-roeder/favicon-loader#readme",
+  "dependencies": {
+    "datauri": "^2.0.0",
+    "follow-redirects": "^1.7.0",
+    "image-size": "^0.7.4",
+    "page-icon": "^0.3.0"
+  }
+}
