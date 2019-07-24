@@ -4,7 +4,7 @@
   "description": "loading and downloading best favicon of a Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "datauri": "^2.0.0",
     "follow-redirects": "^1.7.0",
     "image-size": "^0.7.4",
+    "mocha": "^6.2.0",
     "page-icon": "^0.3.0"
   },
   "devDependencies": {}
