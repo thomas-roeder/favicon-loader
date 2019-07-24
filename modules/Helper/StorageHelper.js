@@ -10,7 +10,7 @@ function StorageHelper (pUrl, pMainImageDirPath)
     this.urlObj =  url.parse(pUrl, true);
     this.url = pUrl;
     this.mainImageDirPath = pMainImageDirPath;
-    this.defaultIcon = path.join(__dirname, '../Icon/icon.ico');
+    this.defaultIcon = path.join(__dirname, '../Icon/icon.png');
 
     this.getIconPath = (filenameInclExt) =>{
         return path.join(this.mainImageDirPath, this.urlObj.host) + '/' + filenameInclExt;
