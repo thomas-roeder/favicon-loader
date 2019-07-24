@@ -11,10 +11,10 @@ function ResultHelper (pResultOption)
                 return FileInformation.getInfo(iconPath);
                 break
             case 'FILE_DATA':
-                return ImageManager.getImageArray(imageStorage.getDefaultIcon());
+                return ImageManager.getImageArray(iconPath);
                 break
             default:
-                return FileInformation(iconPath);
+                return FileInformation.getInfo(iconPath);
         }
     }
 }
