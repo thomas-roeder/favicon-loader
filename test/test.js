@@ -74,6 +74,24 @@ const testCases = [
             }
         }
     },
+    {
+        testTitle:'Testcase with without protocol and costom default icon', 
+        url:'www.github.com', 
+        imageDirPath: path.join(__dirname,'./uploads'), 
+        options:{
+            result:'FILE_INFORMATION',
+            default_icon: path.join(__dirname,'./default.png')
+        },
+        result:{
+            typ:'error',
+            exspected:{ 
+                path: path.join(__dirname,'./default.png'),
+                basename: 'default.png',
+                extention: '.png',
+                mimetype: 'image/png' 
+            }
+        }
+    },
 
 ];
 

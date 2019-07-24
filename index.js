@@ -26,6 +26,10 @@ async function main(pPageUrl, pImageDirPath ,pOptions = {})
 {
     var imageStorage = new StorageHelper(pPageUrl, pImageDirPath);
     var resultOption = pOptions.hasOwnProperty("result") ? pOptions.result : false;
+
+    if(pOptions.hasOwnProperty("default_icon")){
+        imageStorage.updateDefaultIcon(pOptions.default_icon);
+    }
     var resultHelper = new ResultHelper(resultOption);
 
     if(!imageStorage.getUrl()){
@@ -34,7 +38,7 @@ async function main(pPageUrl, pImageDirPath ,pOptions = {})
 
     var urlexists = await UrlService.checkUrlExists(imageStorage.getUrl());
     if(!urlexists){
-        return urlexists;
+        return await resultHelper.handleResult(imageStorage.getDefaultIcon());
     }
 
     var redirections = await UrlService.checkRedirects(imageStorage.getUrl());

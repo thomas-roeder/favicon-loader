@@ -30,6 +30,15 @@ function StorageHelper (pUrl, pMainImageDirPath)
         this.mainImageDirPath = pMainImageDirPath;
         return;
     }
+    this.updateDefaultIcon = (pDefaultIcon) =>{
+        try {
+            if (fs.existsSync(pDefaultIcon)) {
+                this.defaultIcon = pDefaultIcon;
+            }
+          } catch(err) {
+          }
+        return;
+    }
 
     this.getUrl = () =>{
         if(this.urlObj.host && this.urlObj.protocol){
@@ -42,7 +51,7 @@ function StorageHelper (pUrl, pMainImageDirPath)
         return this.urlObj.host || false;
     }
 
-    this.getDefaultIcon = () =>{    
+    this.getDefaultIcon = () =>{  
         return this.defaultIcon;
     }
 
