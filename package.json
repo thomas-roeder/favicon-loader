@@ -24,7 +24,7 @@
     "datauri": "^2.0.0",
     "follow-redirects": "^1.7.0",
     "image-size": "^0.7.4",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "page-icon": "^0.3.0"
   },
   "devDependencies": {}
